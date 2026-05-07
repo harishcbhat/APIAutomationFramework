@@ -21,7 +21,7 @@ jobs:
         cache: maven
         
     - name: Executes Tests
-      run: mvn clean test -Dsuite=suite -x
+      run: mvn clean test -Dsuite=suite -X
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
